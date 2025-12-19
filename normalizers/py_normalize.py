@@ -21,25 +21,6 @@ class PyNormalizer(BsNormalizer):
                           "comparison_operator": "middle_op_node",
                           "binary_operator": "middle_op_node",
                           "binary":"middle_op_node"}
-        #with open("lang_description.json","r") as f:
-        #    self.nst_nodes = json.load(f)
-        #self.nst_nodes = {"expression_statement": "stmt_expr", #not sure that this is necessary
-        #                  "assignment": "assign",
-        #                  "identifier": "identifier",
-        #                  "integer": "integer",
-        #                  "if": "if_cond",
-        #                  "elif": "elif_cond",
-        #                  "if_statement": "if_stmt",
-        #                  "elif_clause":"elif_clause",
-        #                  "else_clause":"else_clause",
-        #                  "else":"else",
-        #                  "comparison_operator": "middle_op_node",
-        #                  "binary_operator": "middle_op_node",
-        #                  }
-        #with open("lang_description.json","w") as f:
-        #    json.dump(self.nst_nodes,f)
-        #quit()
-        #self.op_nodes = ["="]
         self.file_string = None
         self.trash = ["if","elif","else","comment","-","==","/","*",";",">","+","=",":","block"]
 
