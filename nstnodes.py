@@ -1,0 +1,11 @@
+nst_nodes = ["stmt_expr",
+             "assign",
+             "identifier",
+             "integer",
+             "if_cond",
+             "elif_cond",
+             "if_stmt",
+             "elif_clause",
+             "else_clause",
+             "else",
+             "middle_op_node",]
