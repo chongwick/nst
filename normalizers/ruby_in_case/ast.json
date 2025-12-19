@@ -1,0 +1,809 @@
+{
+  "success": true,
+  "ast": {
+    "type": "program_node",
+    "location": {
+      "start_line": 11,
+      "start_column": 0,
+      "end_line": 30,
+      "end_column": 3
+    },
+    "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+    "node_id": 61,
+    "flags": 0,
+    "locals": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "statements": {
+      "type": "statements_node",
+      "location": {
+        "start_line": 11,
+        "start_column": 0,
+        "end_line": 30,
+        "end_column": 3
+      },
+      "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+      "node_id": 1,
+      "flags": 0,
+      "body": [
+        {
+          "type": "local_variable_write_node",
+          "location": {
+            "start_line": 11,
+            "start_column": 0,
+            "end_line": 11,
+            "end_column": 6
+          },
+          "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+          "node_id": 4,
+          "flags": 1,
+          "name": "a",
+          "depth": 0,
+          "name_loc": 455266533377,
+          "value": {
+            "type": "integer_node",
+            "location": {
+              "start_line": 11,
+              "start_column": 4,
+              "end_line": 11,
+              "end_column": 6
+            },
+            "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+            "node_id": 3,
+            "flags": 10,
+            "value": 10
+          },
+          "operator_loc": 463856467969
+        },
+        {
+          "type": "local_variable_write_node",
+          "location": {
+            "start_line": 12,
+            "start_column": 0,
+            "end_line": 12,
+            "end_column": 5
+          },
+          "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+          "node_id": 7,
+          "flags": 1,
+          "name": "b",
+          "depth": 0,
+          "name_loc": 485331304449,
+          "value": {
+            "type": "integer_node",
+            "location": {
+              "start_line": 12,
+              "start_column": 4,
+              "end_line": 12,
+              "end_column": 5
+            },
+            "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+            "node_id": 6,
+            "flags": 10,
+            "value": 5
+          },
+          "operator_loc": 493921239041
+        },
+        {
+          "type": "if_node",
+          "location": {
+            "start_line": 14,
+            "start_column": 0,
+            "end_line": 23,
+            "end_column": 3
+          },
+          "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+          "node_id": 25,
+          "flags": 1,
+          "if_keyword_loc": 515396075522,
+          "predicate": {
+            "type": "call_node",
+            "location": {
+              "start_line": 14,
+              "start_column": 3,
+              "end_line": 14,
+              "end_column": 8
+            },
+            "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+            "node_id": 10,
+            "flags": 128,
+            "receiver": {
+              "type": "local_variable_read_node",
+              "location": {
+                "start_line": 14,
+                "start_column": 3,
+                "end_line": 14,
+                "end_column": 4
+              },
+              "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+              "node_id": 8,
+              "flags": 0,
+              "name": "a",
+              "depth": 0
+            },
+            "call_operator_loc": null,
+            "name": ">",
+            "message_loc": 536870912001,
+            "opening_loc": null,
+            "arguments": {
+              "type": "arguments_node",
+              "location": {
+                "start_line": 14,
+                "start_column": 7,
+                "end_line": 14,
+                "end_column": 8
+              },
+              "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+              "node_id": 11,
+              "flags": 0,
+              "arguments": [
+                {
+                  "type": "integer_node",
+                  "location": {
+                    "start_line": 14,
+                    "start_column": 7,
+                    "end_line": 14,
+                    "end_column": 8
+                  },
+                  "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                  "node_id": 9,
+                  "flags": 10,
+                  "value": 8
+                }
+              ]
+            },
+            "closing_loc": null,
+            "block": null
+          },
+          "then_keyword_loc": 554050781188,
+          "statements": {
+            "type": "statements_node",
+            "location": {
+              "start_line": 15,
+              "start_column": 2,
+              "end_line": 16,
+              "end_column": 11
+            },
+            "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+            "node_id": 12,
+            "flags": 0,
+            "body": [
+              {
+                "type": "local_variable_write_node",
+                "location": {
+                  "start_line": 15,
+                  "start_column": 2,
+                  "end_line": 15,
+                  "end_column": 11
+                },
+                "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                "node_id": 18,
+                "flags": 1,
+                "name": "c",
+                "depth": 0,
+                "name_loc": 584115552257,
+                "value": {
+                  "type": "call_node",
+                  "location": {
+                    "start_line": 15,
+                    "start_column": 6,
+                    "end_line": 15,
+                    "end_column": 11
+                  },
+                  "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                  "node_id": 16,
+                  "flags": 0,
+                  "receiver": {
+                    "type": "local_variable_read_node",
+                    "location": {
+                      "start_line": 15,
+                      "start_column": 6,
+                      "end_line": 15,
+                      "end_column": 7
+                    },
+                    "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                    "node_id": 14,
+                    "flags": 0,
+                    "name": "a",
+                    "depth": 0
+                  },
+                  "call_operator_loc": null,
+                  "name": "+",
+                  "message_loc": 609885356033,
+                  "opening_loc": null,
+                  "arguments": {
+                    "type": "arguments_node",
+                    "location": {
+                      "start_line": 15,
+                      "start_column": 10,
+                      "end_line": 15,
+                      "end_column": 11
+                    },
+                    "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                    "node_id": 17,
+                    "flags": 0,
+                    "arguments": [
+                      {
+                        "type": "local_variable_read_node",
+                        "location": {
+                          "start_line": 15,
+                          "start_column": 10,
+                          "end_line": 15,
+                          "end_column": 11
+                        },
+                        "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                        "node_id": 15,
+                        "flags": 0,
+                        "name": "b",
+                        "depth": 0
+                      }
+                    ]
+                  },
+                  "closing_loc": null,
+                  "block": null
+                },
+                "operator_loc": 592705486849
+              },
+              {
+                "type": "local_variable_write_node",
+                "location": {
+                  "start_line": 16,
+                  "start_column": 2,
+                  "end_line": 16,
+                  "end_column": 11
+                },
+                "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                "node_id": 24,
+                "flags": 1,
+                "name": "d",
+                "depth": 0,
+                "name_loc": 635655159809,
+                "value": {
+                  "type": "call_node",
+                  "location": {
+                    "start_line": 16,
+                    "start_column": 6,
+                    "end_line": 16,
+                    "end_column": 11
+                  },
+                  "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                  "node_id": 22,
+                  "flags": 0,
+                  "receiver": {
+                    "type": "local_variable_read_node",
+                    "location": {
+                      "start_line": 16,
+                      "start_column": 6,
+                      "end_line": 16,
+                      "end_column": 7
+                    },
+                    "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                    "node_id": 20,
+                    "flags": 0,
+                    "name": "a",
+                    "depth": 0
+                  },
+                  "call_operator_loc": null,
+                  "name": "-",
+                  "message_loc": 661424963585,
+                  "opening_loc": null,
+                  "arguments": {
+                    "type": "arguments_node",
+                    "location": {
+                      "start_line": 16,
+                      "start_column": 10,
+                      "end_line": 16,
+                      "end_column": 11
+                    },
+                    "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                    "node_id": 23,
+                    "flags": 0,
+                    "arguments": [
+                      {
+                        "type": "local_variable_read_node",
+                        "location": {
+                          "start_line": 16,
+                          "start_column": 10,
+                          "end_line": 16,
+                          "end_column": 11
+                        },
+                        "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                        "node_id": 21,
+                        "flags": 0,
+                        "name": "b",
+                        "depth": 0
+                      }
+                    ]
+                  },
+                  "closing_loc": null,
+                  "block": null
+                },
+                "operator_loc": 644245094401
+              }
+            ]
+          },
+          "subsequent": {
+            "type": "if_node",
+            "location": {
+              "start_line": 17,
+              "start_column": 0,
+              "end_line": 23,
+              "end_column": 3
+            },
+            "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+            "node_id": 34,
+            "flags": 1,
+            "if_keyword_loc": 678604832773,
+            "predicate": {
+              "type": "call_node",
+              "location": {
+                "start_line": 17,
+                "start_column": 6,
+                "end_line": 17,
+                "end_column": 12
+              },
+              "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+              "node_id": 28,
+              "flags": 0,
+              "receiver": {
+                "type": "local_variable_read_node",
+                "location": {
+                  "start_line": 17,
+                  "start_column": 6,
+                  "end_line": 17,
+                  "end_column": 7
+                },
+                "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                "node_id": 26,
+                "flags": 0,
+                "name": "a",
+                "depth": 0
+              },
+              "call_operator_loc": null,
+              "name": "==",
+              "message_loc": 712964571138,
+              "opening_loc": null,
+              "arguments": {
+                "type": "arguments_node",
+                "location": {
+                  "start_line": 17,
+                  "start_column": 11,
+                  "end_line": 17,
+                  "end_column": 12
+                },
+                "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                "node_id": 29,
+                "flags": 0,
+                "arguments": [
+                  {
+                    "type": "integer_node",
+                    "location": {
+                      "start_line": 17,
+                      "start_column": 11,
+                      "end_line": 17,
+                      "end_column": 12
+                    },
+                    "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                    "node_id": 27,
+                    "flags": 10,
+                    "value": 8
+                  }
+                ]
+              },
+              "closing_loc": null,
+              "block": null
+            },
+            "then_keyword_loc": 734439407620,
+            "statements": {
+              "type": "statements_node",
+              "location": {
+                "start_line": 18,
+                "start_column": 2,
+                "end_line": 18,
+                "end_column": 7
+              },
+              "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+              "node_id": 30,
+              "flags": 0,
+              "body": [
+                {
+                  "type": "local_variable_write_node",
+                  "location": {
+                    "start_line": 18,
+                    "start_column": 2,
+                    "end_line": 18,
+                    "end_column": 7
+                  },
+                  "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                  "node_id": 33,
+                  "flags": 1,
+                  "name": "c",
+                  "depth": 0,
+                  "name_loc": 764504178689,
+                  "value": {
+                    "type": "integer_node",
+                    "location": {
+                      "start_line": 18,
+                      "start_column": 6,
+                      "end_line": 18,
+                      "end_column": 7
+                    },
+                    "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                    "node_id": 32,
+                    "flags": 10,
+                    "value": 2
+                  },
+                  "operator_loc": 773094113281
+                }
+              ]
+            },
+            "subsequent": {
+              "type": "else_node",
+              "location": {
+                "start_line": 20,
+                "start_column": 0,
+                "end_line": 23,
+                "end_column": 3
+              },
+              "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+              "node_id": 48,
+              "flags": 0,
+              "else_keyword_loc": 794568949764,
+              "statements": {
+                "type": "statements_node",
+                "location": {
+                  "start_line": 21,
+                  "start_column": 2,
+                  "end_line": 22,
+                  "end_column": 11
+                },
+                "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                "node_id": 35,
+                "flags": 0,
+                "body": [
+                  {
+                    "type": "local_variable_write_node",
+                    "location": {
+                      "start_line": 21,
+                      "start_column": 2,
+                      "end_line": 21,
+                      "end_column": 11
+                    },
+                    "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                    "node_id": 41,
+                    "flags": 1,
+                    "name": "c",
+                    "depth": 0,
+                    "name_loc": 824633720833,
+                    "value": {
+                      "type": "call_node",
+                      "location": {
+                        "start_line": 21,
+                        "start_column": 6,
+                        "end_line": 21,
+                        "end_column": 11
+                      },
+                      "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                      "node_id": 39,
+                      "flags": 0,
+                      "receiver": {
+                        "type": "local_variable_read_node",
+                        "location": {
+                          "start_line": 21,
+                          "start_column": 6,
+                          "end_line": 21,
+                          "end_column": 7
+                        },
+                        "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                        "node_id": 37,
+                        "flags": 0,
+                        "name": "a",
+                        "depth": 0
+                      },
+                      "call_operator_loc": null,
+                      "name": "*",
+                      "message_loc": 850403524609,
+                      "opening_loc": null,
+                      "arguments": {
+                        "type": "arguments_node",
+                        "location": {
+                          "start_line": 21,
+                          "start_column": 10,
+                          "end_line": 21,
+                          "end_column": 11
+                        },
+                        "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                        "node_id": 40,
+                        "flags": 0,
+                        "arguments": [
+                          {
+                            "type": "local_variable_read_node",
+                            "location": {
+                              "start_line": 21,
+                              "start_column": 10,
+                              "end_line": 21,
+                              "end_column": 11
+                            },
+                            "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                            "node_id": 38,
+                            "flags": 0,
+                            "name": "b",
+                            "depth": 0
+                          }
+                        ]
+                      },
+                      "closing_loc": null,
+                      "block": null
+                    },
+                    "operator_loc": 833223655425
+                  },
+                  {
+                    "type": "local_variable_write_node",
+                    "location": {
+                      "start_line": 22,
+                      "start_column": 2,
+                      "end_line": 22,
+                      "end_column": 11
+                    },
+                    "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                    "node_id": 47,
+                    "flags": 1,
+                    "name": "d",
+                    "depth": 0,
+                    "name_loc": 876173328385,
+                    "value": {
+                      "type": "call_node",
+                      "location": {
+                        "start_line": 22,
+                        "start_column": 6,
+                        "end_line": 22,
+                        "end_column": 11
+                      },
+                      "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                      "node_id": 45,
+                      "flags": 0,
+                      "receiver": {
+                        "type": "local_variable_read_node",
+                        "location": {
+                          "start_line": 22,
+                          "start_column": 6,
+                          "end_line": 22,
+                          "end_column": 7
+                        },
+                        "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                        "node_id": 43,
+                        "flags": 0,
+                        "name": "a",
+                        "depth": 0
+                      },
+                      "call_operator_loc": null,
+                      "name": "/",
+                      "message_loc": 901943132161,
+                      "opening_loc": null,
+                      "arguments": {
+                        "type": "arguments_node",
+                        "location": {
+                          "start_line": 22,
+                          "start_column": 10,
+                          "end_line": 22,
+                          "end_column": 11
+                        },
+                        "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                        "node_id": 46,
+                        "flags": 0,
+                        "arguments": [
+                          {
+                            "type": "local_variable_read_node",
+                            "location": {
+                              "start_line": 22,
+                              "start_column": 10,
+                              "end_line": 22,
+                              "end_column": 11
+                            },
+                            "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                            "node_id": 44,
+                            "flags": 0,
+                            "name": "b",
+                            "depth": 0
+                          }
+                        ]
+                      },
+                      "closing_loc": null,
+                      "block": null
+                    },
+                    "operator_loc": 884763262977
+                  }
+                ]
+              },
+              "end_keyword_loc": 919123001347
+            },
+            "end_keyword_loc": 919123001347
+          },
+          "end_keyword_loc": 919123001347
+        },
+        {
+          "type": "local_variable_write_node",
+          "location": {
+            "start_line": 26,
+            "start_column": 0,
+            "end_line": 26,
+            "end_column": 5
+          },
+          "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+          "node_id": 51,
+          "flags": 1,
+          "name": "e",
+          "depth": 0,
+          "name_loc": 1069446856705,
+          "value": {
+            "type": "integer_node",
+            "location": {
+              "start_line": 26,
+              "start_column": 4,
+              "end_line": 26,
+              "end_column": 5
+            },
+            "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+            "node_id": 50,
+            "flags": 10,
+            "value": 8
+          },
+          "operator_loc": 1078036791297
+        },
+        {
+          "type": "if_node",
+          "location": {
+            "start_line": 28,
+            "start_column": 0,
+            "end_line": 30,
+            "end_column": 3
+          },
+          "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+          "node_id": 60,
+          "flags": 1,
+          "if_keyword_loc": 1099511627778,
+          "predicate": {
+            "type": "call_node",
+            "location": {
+              "start_line": 28,
+              "start_column": 3,
+              "end_line": 28,
+              "end_column": 9
+            },
+            "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+            "node_id": 54,
+            "flags": 128,
+            "receiver": {
+              "type": "local_variable_read_node",
+              "location": {
+                "start_line": 28,
+                "start_column": 3,
+                "end_line": 28,
+                "end_column": 4
+              },
+              "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+              "node_id": 52,
+              "flags": 0,
+              "name": "e",
+              "depth": 0
+            },
+            "call_operator_loc": null,
+            "name": ">",
+            "message_loc": 1120986464257,
+            "opening_loc": null,
+            "arguments": {
+              "type": "arguments_node",
+              "location": {
+                "start_line": 28,
+                "start_column": 7,
+                "end_line": 28,
+                "end_column": 9
+              },
+              "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+              "node_id": 55,
+              "flags": 0,
+              "arguments": [
+                {
+                  "type": "integer_node",
+                  "location": {
+                    "start_line": 28,
+                    "start_column": 7,
+                    "end_line": 28,
+                    "end_column": 9
+                  },
+                  "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                  "node_id": 53,
+                  "flags": 10,
+                  "value": 25
+                }
+              ]
+            },
+            "closing_loc": null,
+            "block": null
+          },
+          "then_keyword_loc": null,
+          "statements": {
+            "type": "statements_node",
+            "location": {
+              "start_line": 29,
+              "start_column": 2,
+              "end_line": 29,
+              "end_column": 7
+            },
+            "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+            "node_id": 56,
+            "flags": 0,
+            "body": [
+              {
+                "type": "local_variable_write_node",
+                "location": {
+                  "start_line": 29,
+                  "start_column": 2,
+                  "end_line": 29,
+                  "end_column": 7
+                },
+                "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                "node_id": 59,
+                "flags": 1,
+                "name": "f",
+                "depth": 0,
+                "name_loc": 1151051235329,
+                "value": {
+                  "type": "integer_node",
+                  "location": {
+                    "start_line": 29,
+                    "start_column": 6,
+                    "end_line": 29,
+                    "end_column": 7
+                  },
+                  "source": "#<Prism::ASCIISource:0x00000001027c8d20>",
+                  "node_id": 58,
+                  "flags": 10,
+                  "value": 0
+                },
+                "operator_loc": 1159641169921
+              }
+            ]
+          },
+          "subsequent": null,
+          "end_keyword_loc": 1176821039107
+        }
+      ]
+    }
+  },
+  "errors": [],
+  "warnings": [
+    {
+      "message": "assigned but unused variable - c",
+      "location": {
+        "start_line": 15,
+        "start_column": 2,
+        "end_line": 15,
+        "end_column": 3
+      }
+    },
+    {
+      "message": "assigned but unused variable - d",
+      "location": {
+        "start_line": 16,
+        "start_column": 2,
+        "end_line": 16,
+        "end_column": 3
+      }
+    },
+    {
+      "message": "assigned but unused variable - f",
+      "location": {
+        "start_line": 29,
+        "start_column": 2,
+        "end_line": 29,
+        "end_column": 3
+      }
+    }
+  ]
+}
