@@ -46,6 +46,7 @@ class RbNormalizer(BsNormalizer):
             #            node.children[1].byte_range[1])
 
 
+            print(node.type)
             if node.type not in self.trash: 
                 #print(node_type,node_string)
                 new_node = nst_node(node_type,[],node_string)
