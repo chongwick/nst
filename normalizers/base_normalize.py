@@ -10,23 +10,6 @@ import tree_sitter_php as tsphp
 #Let's build this slowly. We have a little time for this one.
 #USE field names WHEN AVAILABLE otherwise we need to use the stupid list...
 
-def _get_field_names(node):
-    for i in range(len(node.children)):
-        print(node.field_name_for_child(i))
-    quit()
-
-def _print_tree(node, indent=0):
-    print("  " * indent + node.type)
-    for child in node.children:
-        _print_tree(child, indent + 1)
-
-def _print_nst(node, indent=0):
-    if node.str_val != None:
-        print("  " * indent + node.str_val, node.ntype)
-    else:
-        print("  " * indent + node.ntype)
-    for child in node.children:
-        _print_nst(child, indent + 1)
         
 class nst_node():
     def __init__(self,ntype,children,str_val,lang=None):
@@ -44,6 +27,24 @@ class BsNormalizer():
         self.file_string = None
         self.trash = []
 
+    def _get_field_names(self,node):
+        for i in range(len(node.children)):
+            print(node.field_name_for_child(i))
+        quit()
+
+    def _print_tree(self,node, indent=0):
+        print("  " * indent + node.type)
+        for child in node.children:
+            self._print_tree(child, indent + 1)
+
+    def _print_nst(self,node, indent=0):
+        if node.str_val != None:
+            print("  " * indent + node.ntype, node.str_val.replace("\n",""))
+        else:
+            print("  " * indent + node.ntype)
+        for child in node.children:
+            self._print_nst(child, indent + 1)
+
     def parse_file_string(self, start_token, stop_token):
         return self.file_string[start_token:stop_token+1].lstrip().rstrip()
 
@@ -53,9 +54,13 @@ class BsNormalizer():
         elif node.type in self.trash:
             return node.type
         else:
-            _print_tree(node)
+            self._print_tree(node)
             raise NotImplementedError(f"No handler for {node.type}")
 
+    def eval_nst(self,node):
+        print(node.ntype)
+        for child in node.children:
+            self.eval_nst(child)
 
     def eval_node(self,node,parent=None):
         if isinstance(node,list):
@@ -88,12 +93,6 @@ class BsNormalizer():
                         parent.children.append(child_node)
                 return None
 
-    def eval_nst(self,node):
-        print(node.ntype)
-        for child in node.children:
-            self.eval_nst(child)
-
-
     def analyze(self,target_file):
         LANGUAGE = Language(tspython.language())
         parser = Parser(LANGUAGE)
@@ -111,7 +110,7 @@ class BsNormalizer():
         #    _print_tree(node)
 
         nst_root = self.eval_node(tree.root_node.children,nst)
-        _print_nst(nst_root)
+        self._print_nst(nst_root)
 
         #for node in nst:
         #    self.eval_nst(node)
