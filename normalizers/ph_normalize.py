@@ -40,6 +40,14 @@ class PhNormalizer(BsNormalizer):
                 node.byte_range[0],node.byte_range[1])
             node_type = self.normalize_type(node)
 
+            if node_string[-1] == ")" or node_string[-1] == ";":
+                node_string = node_string[:-1]
+
+            if node_type == "identifier":
+                node_string = self.parse_file_string(
+                        node.children[1].byte_range[0],
+                        node.children[1].byte_range[1])
+
             if node_type == "middle_op_node":
                 node_string = self.parse_file_string(
                         node.children[1].byte_range[0],
